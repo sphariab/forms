@@ -1,0 +1,97 @@
+@import '../variables.scss';
+
+@media (min-width: 320px) {
+  .calendar {
+    width: 100%;
+    height: 368px;
+    background: #FFFFFF;
+    box-shadow: 0px 18px 50px rgba(0, 0, 0, 0.16);
+    border-radius: 3px;
+    text-align: center;
+    margin-top: 8px;
+    &-title {
+      padding: 16px 16px 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .month-name {
+    font-family: $font-regular;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .icon {
+    cursor: pointer;
+  }
+
+  .calendar-day-name {
+    font-family: $font-regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    color: #8D8D8D;
+    padding: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+
+  .month-week {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-bottom: 9px;
+  }
+
+  .month-week-line {
+    margin: 0 14px;
+    height: 1px;
+    background: #CDCDCD;
+  }
+
+  .calendar-days-container {
+    padding-top: 10px;
+    text-align: left;
+  }
+
+  .calendar-day-name {
+    width: 30px;
+    height: 30px;
+    margin: 6px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+  }
+  .past {
+    color: #CDCDCD;;
+  }
+  .current {
+    color: #000000;
+  }
+  .disabled {
+    color: #8B8B8B;
+  }
+
+  .checked {
+    color: #FFFFFF;
+    background: #DF1721;
+    border-radius: 3px;
+  }
+
+  .today {
+    border: 1px solid #DF1721;
+    box-sizing: border-box;
+    border-radius: 3px;
+  }
+}
+
+@media (min-width: 640px) {
+  .calendar  {
+    width: 300px;
+  }
+}

@@ -9,49 +9,61 @@
   font-weight: normal;
   font-style: normal;
 }
-.app {
-  padding: 20px;
+@media (min-width: 320px) {
+  .app {
+    padding: 20px;
 
-  .sections {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
+    .sections {
+      display: block;
+    }
+  }
 
-    section {
-      padding: 20px;
-      border: 1px solid #dadada;
-      border-radius: 3px;
+  .styleguide-v2 {
+    font-size: 12px;
+    line-height: 16px;
+
+    h1,
+    h2,
+    h3 {
+      margin-top: 0;
+    }
+
+    h1 {
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 60px;
+    }
+
+    h2 {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    h3 {
+      font-size: 20px;
+      line-height: 32px;
+    }
+
+    .row {
+      margin: 20px 0;
     }
   }
 }
 
-.styleguide-v2 {
-  font-size: 12px;
-  line-height: 16px;
+@media (min-width: 1024px) {
+  .app {
+    padding: 20px;
 
-  h1,
-  h2,
-  h3 {
-    margin-top: 0;
-  }
+    .sections {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: 1fr 1fr 1fr;
 
-  h1 {
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 60px;
-  }
-
-  h2 {
-    font-size: 24px;
-    line-height: 32px;
-  }
-
-  h3 {
-    font-size: 20px;
-    line-height: 32px;
-  }
-
-  .row {
-    margin: 20px 0;
+      section {
+        padding: 20px;
+        border: 1px solid #dadada;
+        border-radius: 3px;
+      }
+    }
   }
 }

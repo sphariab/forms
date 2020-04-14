@@ -5,10 +5,12 @@ import { theme } from 'styleguide';
 import Input from 'components/Input';
 import CalendarPopup from 'components/CalendarPopup';
 import Notifications from 'components/Notifications';
+import Header from 'components/Header';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
+      <Header />
       <div className="app styleguide-v2">
         <h1>Test Assignment</h1>
         <div className="sections">
