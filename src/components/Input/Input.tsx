@@ -1,6 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
-
+import 'styleguide/components/inputStyles.scss';
 import styled from 'styleguide/styled';
 import Icon from 'components/Icon';
 import { IconName } from 'components/Icon/Icon';
@@ -32,6 +32,7 @@ const Input: React.FC<IComponentProps> = ({
   label,
   error,
   success,
+  disabled,
   icon,
   blurOnSubmit,
   className,
@@ -46,10 +47,13 @@ const Input: React.FC<IComponentProps> = ({
   };
 
   return (
-    <StyledInput className={clsx('input', { label, icon, error, success }, className)}>
-      <label>{label}</label>
+    <StyledInput className={clsx('input', { label, icon, error, success, disabled }, className)}>
+      <label className="input-label">{label}</label>
       <div className="input-wrapper">
-        <input onKeyPress={handleKeyPress} {...props} />
+        <input
+            className="input-field"
+            onKeyPress={handleKeyPress} {...props}
+        />
         {icon && <Icon name={icon} />}
       </div>
       <div className="error-text">{error}</div>

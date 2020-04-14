@@ -15,10 +15,10 @@ function App() {
           <section>
             <h2>Input Styling</h2>
             <div className="row">
-              <Input label="Caption for field" placeholder="Placeholder" />
+              <Input label="Caption for field" placeholder="Choose" />
             </div>
             <div className="row">
-              <Input label="Disabled" placeholder="Placeholder" disabled />
+              <Input label="Disabled" placeholder="Placeholder" disabled={true} />
             </div>
             <div className="row">
               <Input label="Error" placeholder="Placeholder" error="Error text" icon="error" />
