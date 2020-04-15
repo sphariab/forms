@@ -9,6 +9,65 @@
   font-weight: normal;
   font-style: normal;
 }
+
+.past {
+  color: #CDCDCD;
+}
+
+.next {
+  color: #DADADA;
+}
+
+.current {
+  color: #000000;
+}
+
+.disabled {
+  color: #8B8B8B;
+}
+
+.checked {
+  color: #FFFFFF;
+  background: #DF1721;
+  border-radius: 3px;
+}
+
+.icon-search {
+  fill: #CDCDCD;
+}
+
+.error {
+  input {
+    border: 1px solid #DF1721;
+  }
+  .icon-error {
+    fill: #DF1721;
+  }
+}
+
+.success {
+  .icon-check-circle {
+    fill: #62B120;
+  }
+  input{
+    -webkit-text-security: disc;
+  }
+}
+
+.disabled {
+  input {
+    background: #F8F8F8;
+    border: 1px solid #DADADA;
+    color: #CDCDCD;
+  }
+}
+
+.today {
+  border: 1px solid #DF1721;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
 @media (min-width: 320px) {
   .app {
     padding: 20px;

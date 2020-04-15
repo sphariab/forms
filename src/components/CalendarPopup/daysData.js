@@ -36,11 +36,11 @@ const days = [
   {dayNumber: '28', status: 'current'},
   {dayNumber: '29', status: 'current'},
   {dayNumber: '30', status: 'current'},
-  {dayNumber: '1', status: 'disabled'},
-  {dayNumber: '2', status: 'disabled'},
-  {dayNumber: '3', status: 'disabled'},
-  {dayNumber: '4', status: 'disabled'},
-  {dayNumber: '5', status: 'disabled'},
+  {dayNumber: '1', status: 'next'},
+  {dayNumber: '2', status: 'next'},
+  {dayNumber: '3', status: 'next'},
+  {dayNumber: '4', status: 'next'},
+  {dayNumber: '5', status: 'next'}
 ]
 
 export default days
